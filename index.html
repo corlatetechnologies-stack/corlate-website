@@ -5,8 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Corlate Technologies — Digital Systems That Power Modern Businesses</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/contact.css">
+<link rel="stylesheet" href="css/footer.css">
 </head>
 <style>
   nav {
@@ -805,56 +807,6 @@
   .cta-sub { color:rgba(255,255,255,0.6); font-size:1rem; max-width:480px; margin:0 auto 40px; line-height:1.78; position:relative; }
   .cta-btns { display:flex; justify-content:center; gap:14px; flex-wrap:wrap; position:relative; }
 
-  /* ── CONTACT ── */
-  #contact { background: #060d0e; display:grid; grid-template-columns:1fr 1.3fr; gap:80px; align-items:start; }
-  .contact-info { padding-top: 10px; }
-  .contact-info .section-sub { margin-bottom:40px; }
-  .contact-detail { display:flex; align-items:flex-start; gap:14px; margin-bottom:24px; }
-  .contact-icon-wrap {
-    width:40px; height:40px; border-radius:10px;
-    background: rgba(13,110,120,0.08); border:1px solid var(--border);
-    display:flex; align-items:center; justify-content:center;
-    font-size:1rem; flex-shrink:0; margin-top:2px;
-  }
-  .contact-detail h4 { font-size:0.83rem; color:var(--teal-dark); font-weight:700; letter-spacing:0.03em; }
-  .contact-detail p, .contact-detail a {
-    font-size:0.87rem; color:var(--text-muted); text-decoration:none; transition:color 0.2s;
-  }
-  .contact-detail a:hover { color:var(--teal); }
-  .form-row { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:14px; }
-  .form-group { display:flex; flex-direction:column; gap:6px; margin-bottom:14px; }
-  .form-group label { font-size:0.74rem; color:var(--text-muted); letter-spacing:0.06em; font-weight:600; text-transform:uppercase; }
-  .form-group input, .form-group textarea, .form-group select {
-    background: #ffffff; border:1.5px solid var(--border);
-    border-radius:8px; padding:12px 14px; color:#0a0a0a;
-    font-family:'Poppins',sans-serif; font-size:0.9rem;
-    transition: border-color 0.2s, background 0.2s; outline:none; width:100%;
-  }
-  .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
-    border-color:var(--teal-light); background:#f9f9f9;
-  }
-  .form-group input::placeholder, .form-group textarea::placeholder { color:rgba(10,10,10,0.4); }
-  .form-group select option { background:#ffffff; color:#0a0a0a; }
-  .form-group textarea { resize:vertical; min-height:120px; }
-  .form-submit {
-    width:100%; padding:15px; background:var(--teal); color:#fff;
-    border:none; border-radius:8px; font-family:'Poppins',sans-serif; font-weight:600;
-    font-size:0.9rem; cursor:pointer; transition:0.2s; letter-spacing:0.04em;
-  }
-  .form-submit:hover { background:var(--teal-dark); transform:translateY(-1px); box-shadow:0 8px 24px rgba(13,110,120,0.25); }
-
-  /* ── WHATSAPP FAB ── */
-  .wa-fab {
-    position:fixed; bottom:28px; right:28px; z-index:200;
-    width:56px; height:56px; border-radius:50%;
-    background:#25d366; color:#fff; border:none;
-    display:flex; align-items:center; justify-content:center;
-    font-size:1.5rem; cursor:pointer; box-shadow:0 4px 20px rgba(37,211,102,0.4);
-    text-decoration:none; transition:0.2s;
-    animation: bounceIn 0.6s 1.2s ease both;
-  }
-  .wa-fab:hover { transform:scale(1.1) translateY(-2px); box-shadow:0 8px 28px rgba(37,211,102,0.55); }
-
   /* ── ANIMATIONS ── */
   @keyframes fadeUp { from { opacity:0; transform:translateY(28px); } to { opacity:1; transform:translateY(0); } }
   @keyframes pulse { 0%,100%{opacity:1;transform:scale(1);} 50%{opacity:0.5;transform:scale(0.8);} }
@@ -868,7 +820,6 @@
 
   /* ── RESPONSIVE ── */
   @media(max-width:900px){
-    #contact { grid-template-columns:1fr; gap:40px; }
     .process-steps { grid-template-columns:repeat(2,1fr); gap:32px; }
     .process-steps::before { display:none; }
     .stats-inner { grid-template-columns:repeat(4,1fr); }
@@ -884,8 +835,6 @@
   @media(max-width:768px){
     section { padding: 40px 5%; }
     #services .cards-grid { grid-template-columns: 1fr; }
-    
-    .footer-top { grid-template-columns: repeat(2, 1fr); gap: 24px; padding: 24px 5%; }
   }
   @media(max-width:640px){
     nav { padding:0 5%; height: 64px; }
@@ -945,7 +894,6 @@
     #services { padding: 40px 5%; }
     .cards-grid { grid-template-columns: 1fr; gap: 24px; }
     
-    .form-row { grid-template-columns:1fr; }
     .process-steps { grid-template-columns:1fr; gap: 24px; }
     
     .team-strip { grid-template-columns:repeat(3,1fr); }
@@ -968,113 +916,7 @@
     .cta-btns { gap: 10px; }
     .cta-btns a { padding: 12px 20px; font-size: 0.85rem; }
     
-    #contact { padding: 40px 5%; }
-    .contact-info .section-title { font-size: 1.5rem; }
   }
-
-  /* ── FOOTER ── */
-  footer {
-    background: var(--teal-dark);
-    border-top: 3px solid var(--gold);
-    padding: 0;
-  }
-  .footer-top {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
-    gap: 36px;
-    padding: 30px 6% 20px;
-    border-bottom: 1px solid rgba(255,255,255,0.08);
-    align-items: flex-start;
-  }
-  .footer-brand-col { 
-    display: flex; 
-    flex-direction: column; 
-    align-items: flex-start; 
-    justify-content: flex-start; 
-    gap: 16px;
-  }
-  .footer-branding {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 20px;
-    width: 100%;
-  }
-  .footer-logo {
-    height: 120px;
-    width: 120px;
-    object-fit: contain;
-    flex-shrink: 0;
-  }
-  .footer-brand-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .footer-brand-text h3 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 1.1rem;
-    color: var(--gold);
-    line-height: 1.3;
-    margin: 0;
-    letter-spacing: 0.01em;
-    text-align: center;
-  }
-  .footer-socials {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-  }
-  .footer-social-link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    background: rgba(245,179,25,0.15);
-    color: var(--gold);
-    text-decoration: none;
-    transition: all 0.2s ease;
-    border: 1px solid var(--gold);
-  }
-  .footer-social-link:hover {
-    background: var(--gold);
-    color: #0a0a0a;
-    border-color: var(--gold);
-    transform: translateY(-2px);
-  }
-  .footer-social-link svg {
-    width: 16px;
-    height: 16px;
-    fill: currentColor;
-  }
-  
-  .footer-col { display: flex; flex-direction: column; gap: 8px; }
-  .footer-col h5 {
-    font-family:'Poppins',sans-serif; font-weight:600;
-    font-size: 0.75rem; letter-spacing: 0.12em;
-    text-transform: uppercase; color: var(--gold);
-    margin-bottom: 2px;
-  }
-  .footer-col a {
-    font-size: 0.85rem; color: rgba(255,255,255,0.65);
-    text-decoration: none; transition: all 0.2s;
-  }
-  .footer-col a:hover { color: #fff; margin-left: 4px; }
-  .footer-location { font-size: 0.85rem; color: rgba(255,255,255,0.55); }
-  
-  .footer-bottom {
-    display: flex; align-items: center; justify-content: space-between;
-    flex-wrap: wrap; gap: 12px;
-    padding: 15px 6%;
-    text-align: center;
-  }
-  .footer-copy { font-size: 0.75rem; color: rgba(255,255,255,0.4); }
-  .footer-legal { display: flex; gap: 18px; }
-  .footer-legal a { font-size: 0.8rem; color: rgba(255,255,255,0.4); text-decoration: none; transition: color 0.2s; }
-  .footer-legal a:hover { color: rgba(255,255,255,0.7); }
 
   @media(max-width:900px) {
     #about { padding: 50px 6% 60px; }
@@ -1082,8 +924,6 @@
     .about-header { max-width: 100%; }
     .about-header .section-title { font-size: clamp(1.6rem, 3vw, 2.2rem); }
     .team-strip { gap: 16px; }
-    .footer-brand-col { gap: 12px; }
-    .footer-branding { gap: 16px; }
   }
   @media(max-width:640px) {
     #about { padding: 40px 5% 60px; }
@@ -1097,17 +937,6 @@
     .team-avatar { width: 40px; height: 40px; font-size: 0.75rem; }
     .team-card h4 { font-size: 0.76rem; }
     .team-card p { font-size: 0.65rem; }
-    
-    .footer-top { display: flex; flex-direction: column; gap: 16px; padding: 20px 5%; }
-    .footer-brand-col { display: flex; flex-direction: column; align-items: center; padding: 16px 0; border-top: 1px solid rgba(255,255,255,0.08); order: 4; }
-    .footer-branding { display: none; }
-    .footer-logo { display: none; }
-    .footer-socials { justify-content: center; gap: 12px; }
-    .footer-col { border-top: 1px solid rgba(255,255,255,0.08); padding: 16px 0; }
-    .footer-col h5 { font-size: 0.75rem; }
-    .footer-col a { font-size: 0.85rem; }
-    .footer-bottom { flex-direction: column; text-align: center; padding: 20px 5%; }
-    .footer-legal { flex-direction: column; gap: 16px; }
   }
 </style>
 <body>
@@ -1150,7 +979,6 @@
   </video>
   <div class="hero-geo"></div>
   <div class="hero-content">
-    <div class="hero-badge">🇿🇦 REMOTE-FIRST · SOUTH AFRICA · GLOBALLY CAPABLE</div>
     <p class="hero-tagline">Corlate built for growth</p>
     <h1 class="hero-title">
       We Build Digital Systems That<br>
@@ -1197,7 +1025,7 @@
   <div class="services-track-wrap reveal reveal-delay-3">
     <div class="services-track" id="servicesTrack">
 
-      <!-- Card 1: Website Development -->
+      <!-- Card 1: Web & System Development -->
       <div class="service-flip-wrap" onclick="toggleFlip(this)">
         <div class="service-card">
           <!-- FRONT -->
@@ -1207,24 +1035,24 @@
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 1l4 4-4 4"/><path d="M3 11V9a4 4 0 014-4h14"/><path d="M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 01-4 4H3"/></svg>
                 Hover to flip
               </div>
-              <span class="card-front-icon">🌐</span>
+              <span class="card-front-icon">&#128187;</span>
             </div>
             <div class="card-front-body">
-              <h3>Website Development</h3>
-              <p>Modern, fast and built to convert. We code everything from scratch.</p>
+              <h3>Web &amp; System Development</h3>
+              <p>Custom websites, e-commerce, web apps, and business management systems — built from scratch.</p>
             </div>
           </div>
           <!-- BACK -->
           <div class="card-back cb-1">
-            <span class="card-back-icon">🌐</span>
-            <h4>Website Development</h4>
-            <p>Fast, responsive, conversion-optimised websites built with modern tech. From landing pages to full platforms — digital experiences that perform and grow your business.</p>
-            <a href="#contact" class="back-cta">→ Get a Quote</a>
+            <span class="card-back-icon">&#128187;</span>
+            <h4>Web &amp; System Development</h4>
+            <p>Business Websites &middot; E-commerce &middot; Custom Web Applications &middot; Business Management Systems &middot; Customer Portals &middot; API Integration &middot; Website Redesign &amp; Optimisation &middot; Mobile-Responsive Development</p>
+            <a href="#contact" class="back-cta">&rarr; Get a Quote</a>
           </div>
         </div>
       </div>
 
-      <!-- Card 2: SEO -->
+      <!-- Card 2: Domain, Email Hosting & Maintenance -->
       <div class="service-flip-wrap" onclick="toggleFlip(this)">
         <div class="service-card">
           <div class="card-front">
@@ -1233,23 +1061,23 @@
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 1l4 4-4 4"/><path d="M3 11V9a4 4 0 014-4h14"/><path d="M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 01-4 4H3"/></svg>
                 Hover to flip
               </div>
-              <span class="card-front-icon">🔍</span>
+              <span class="card-front-icon">&#127760;</span>
             </div>
             <div class="card-front-body">
-              <h3>SEO Optimisation</h3>
-              <p>Page 1 Google rankings for the keywords your customers are searching.</p>
+              <h3>Hosting &amp; Maintenance</h3>
+              <p>Reliable domain, email hosting, and ongoing support to keep your business running smoothly.</p>
             </div>
           </div>
           <div class="card-back cb-2">
-            <span class="card-back-icon">🔍</span>
-            <h4>SEO Optimisation</h4>
-            <p>Rank higher on Google. We implement technical SEO, content strategy, and backlink building to put your business in front of the right people at the right time.</p>
-            <a href="#contact" class="back-cta">→ Boost Rankings</a>
+            <span class="card-back-icon">&#127760;</span>
+            <h4>Domain, Email Hosting &amp; Maintenance</h4>
+            <p>Domain Registration &amp; Management &middot; Professional Business Email &middot; Website Hosting &middot; Maintenance &amp; Updates &middot; Security Monitoring &middot; Backup &amp; Recovery &middot; Technical Support</p>
+            <a href="#contact" class="back-cta">&rarr; Get Started</a>
           </div>
         </div>
       </div>
 
-      <!-- Card 3: Digital Marketing -->
+      <!-- Card 3: Surveillance Systems -->
       <div class="service-flip-wrap" onclick="toggleFlip(this)">
         <div class="service-card">
           <div class="card-front">
@@ -1258,18 +1086,18 @@
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 1l4 4-4 4"/><path d="M3 11V9a4 4 0 014-4h14"/><path d="M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 01-4 4H3"/></svg>
                 Hover to flip
               </div>
-              <span class="card-front-icon">📣</span>
+              <span class="card-front-icon">&#128247;</span>
             </div>
             <div class="card-front-body">
-              <h3>Digital Marketing</h3>
-              <p>Paid and organic strategies that fill your pipeline with qualified leads.</p>
+              <h3>Surveillance Systems</h3>
+              <p>CCTV, IP cameras, and remote monitoring solutions to protect your business assets.</p>
             </div>
           </div>
           <div class="card-back cb-3">
-            <span class="card-back-icon">📣</span>
-            <h4>Digital Marketing</h4>
-            <p>Data-driven campaigns across paid social, Google Ads, and organic channels. We turn impressions into leads and leads into loyal, paying customers.</p>
-            <a href="#contact" class="back-cta">→ Grow Revenue</a>
+            <span class="card-back-icon">&#128247;</span>
+            <h4>Surveillance Systems</h4>
+            <p>CCTV Installation &middot; IP Surveillance Systems &middot; Remote Monitoring &middot; NVR &amp; DVR Setup &middot; System Configuration &middot; Maintenance &amp; Support &middot; Security Consultation</p>
+            <a href="#contact" class="back-cta">&rarr; Secure Your Business</a>
           </div>
         </div>
       </div>
@@ -1398,14 +1226,12 @@
         <div class="about-card-visual">
           <div class="about-card-bg ab-3"></div>
           <div class="about-card-reveal">
-            <h4>Remote-First, SA-Wide</h4>
             <p>We work with clients across South Africa — fully remotely. Fast communication, clear deliverables, and zero need for a physical meeting to get great work done.</p>
             <a href="#contact" class="about-link">→ Work With Us</a>
           </div>
           <span class="about-card-icon">🌍</span>
         </div>
         <div class="about-card-body">
-          <h3>Remote-First Team</h3>
           <p>We serve businesses across SA and beyond — no office visit needed, just results.</p>
         </div>
       </div>
@@ -1531,130 +1357,220 @@
 
 <!-- CONTACT -->
 <section id="contact">
-  <div class="contact-info">
-    <div class="section-label reveal">Contact Us</div>
-    <h2 class="section-title reveal reveal-delay-1">Get in Touch</h2>
-    <p class="section-sub reveal reveal-delay-2">Drop us a message and we'll get back to you within 24 hours. Or ping us directly on WhatsApp for a faster response.</p>
-    <div class="contact-detail reveal reveal-delay-3">
-      <div class="contact-icon-wrap">📧</div>
-      <div>
-        <h4>Email</h4>
-        <a href="mailto:info@corlate.co.za">info@corlate.co.za</a>
+
+  <!-- Left -->
+  <div class="contact-left">
+    <p class="cl-label">Contact</p>
+    <h2 class="cl-heading">Let's talk about <em>your business</em></h2>
+    <p class="cl-desc">Fill in the form and we'll get back to you within 24 hours. Or reach us directly on WhatsApp if you'd prefer a faster conversation.</p>
+
+    <div class="cl-details">
+      <div class="cl-detail-row">
+        <p class="cl-detail-label">Email</p>
+        <p class="cl-detail-value"><a href="mailto:info@corlate.co.za">info@corlate.co.za</a></p>
       </div>
-    </div>
-    <div class="contact-detail reveal reveal-delay-3">
-      <div class="contact-icon-wrap">💬</div>
-      <div>
-        <h4>WhatsApp</h4>
-        <a href="https://wa.me/27793241570" target="_blank">Chat directly with our team</a>
+      <div class="cl-detail-row">
+        <p class="cl-detail-label">WhatsApp</p>
+        <p class="cl-detail-value"><a href="https://wa.me/27793241570" target="_blank" rel="noopener">+27 79 324 1570</a></p>
       </div>
-    </div>
-    <div class="contact-detail reveal reveal-delay-4">
-      <div class="contact-icon-wrap">📍</div>
-      <div>
-        <h4>Location</h4>
-        <p>South Africa — Remote-First</p>
+      <div class="cl-detail-row">
+        <p class="cl-detail-label">Response time</p>
+        <p class="cl-detail-value">Within 24 hours on business days</p>
       </div>
     </div>
   </div>
-  <div class="reveal reveal-delay-2">
-    <div class="form-row">
-      <div class="form-group">
-        <label>First Name</label>
-        <input type="text" placeholder="John">
+
+  <!-- Right: Form -->
+  <div class="cf-wrap">
+    <div id="form-body">
+      <p class="cf-heading">Request a free audit</p>
+      <p class="cf-sub">Tell us a bit about your business and what you're hoping to achieve.</p>
+
+      <form id="contactForm" novalidate>
+
+        <div class="form-row">
+          <div class="fg" id="fg-fname">
+            <label for="fname">First name <span class="req">*</span></label>
+            <input type="text" id="fname" name="fname" placeholder="Your first name" autocomplete="given-name" required>
+            <span class="err-msg">Please enter your first name.</span>
+          </div>
+          <div class="fg" id="fg-lname">
+            <label for="lname">Last name <span class="req">*</span></label>
+            <input type="text" id="lname" name="lname" placeholder="Your last name" autocomplete="family-name" required>
+            <span class="err-msg">Please enter your last name.</span>
+          </div>
+        </div>
+
+        <div class="fg" id="fg-email">
+          <label for="email">Email address <span class="req">*</span></label>
+          <input type="email" id="email" name="email" placeholder="you@yourcompany.co.za" autocomplete="email" required>
+          <span class="err-msg">Please enter a valid email address.</span>
+        </div>
+
+        <div class="fg" id="fg-business">
+          <label for="business">Business name</label>
+          <input type="text" id="business" name="business" placeholder="Your business name" autocomplete="organization">
+          <span class="field-note">Optional — helps us personalise the audit.</span>
+        </div>
+
+        <div class="fg" id="fg-service">
+          <label for="service">Service <span class="req">*</span></label>
+          <select id="service" name="service" required>
+            <option value="" disabled selected>Select a service</option>
+            <option value="audit">Free Website Audit</option>
+            <option value="web">Website Development</option>
+            <option value="seo">SEO Optimisation</option>
+            <option value="marketing">Digital Marketing</option>
+            <option value="full">Full Package</option>
+          </select>
+          <span class="err-msg">Please select a service.</span>
+        </div>
+
+        <div class="fg" id="fg-message">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="What are you trying to achieve?" maxlength="600"></textarea>
+        </div>
+        <div class="char-row"><span id="char-count">0</span> / 600</div>
+
+        <button type="submit" class="btn-send" id="submitBtn">Send message</button>
+      </form>
+    </div>
+
+    <div class="form-success" id="form-success">
+      <div class="success-mark">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"/>
+        </svg>
       </div>
-      <div class="form-group">
-        <label>Last Name</label>
-        <input type="text" placeholder="Smith">
-      </div>
+      <h3>Message sent</h3>
+      <p>We'll be in touch within 24 hours.<br>If you need a faster response, message us on WhatsApp.</p>
     </div>
-    <div class="form-group">
-      <label>Email Address</label>
-      <input type="email" placeholder="john@yourcompany.com">
-    </div>
-    <div class="form-group">
-      <label>Company Website</label>
-      <input type="url" placeholder="https://yourwebsite.com">
-    </div>
-    <div class="form-group">
-      <label>Service Interested In</label>
-      <select>
-        <option value="">Select a service</option>
-        <option>Free Website Audit</option>
-        <option>Website Development</option>
-        <option>SEO Optimisation</option>
-        <option>Digital Marketing</option>
-        <option>Full Package</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label>Message</label>
-      <textarea placeholder="Tell us about your project or request your free audit…"></textarea>
-    </div>
-    <button class="form-submit" onclick="handleSubmit(this)">Send Message →</button>
   </div>
+
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-top">
-    <div class="footer-brand-col">
-      <div class="footer-branding">
-        <img src="assets/images/logo2.png" alt="Corlate Technologies Logo" onerror="this.style.display='none'" class="footer-logo">
+  <div class="ft-inner">
+    <div class="ft-top">
+
+      <!-- Brand -->
+      <div class="ft-brand">
+        <img src="assets/images/logo2.png" alt="Corlate Technologies">
+        <p class="ft-tagline">Modern websites, SEO, and digital marketing for South African businesses ready to grow online.</p>
+        <div class="ft-socials">
+          <a href="https://www.linkedin.com/company/corlate-technologies/" target="_blank" rel="noopener" class="ft-social" aria-label="LinkedIn">
+            <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://instagram.com/corlate.tech" target="_blank" rel="noopener" class="ft-social" aria-label="Instagram">
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://wa.me/27793241570" target="_blank" rel="noopener" class="ft-social" aria-label="WhatsApp">
+            <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+        </div>
       </div>
-      <div class="footer-socials">
-        <a href="https://www.linkedin.com/company/corlate-technologies/" target="_blank" class="footer-social-link" title="LinkedIn" aria-label="LinkedIn">
-          <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg>
-        </a>
-        <a href="https://instagram.com/corlate.tech" target="_blank" class="footer-social-link" title="Instagram" aria-label="Instagram">
-          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163C8.756 0 8.334.012 7.053.07 2.695.272.273 2.69.07 7.052.012 8.333 0 8.756 0 12c0 3.244.011 3.668.07 4.948.202 4.358 2.612 6.78 6.972 6.982 1.283.058 1.703.07 4.948.07 3.244 0 3.668-.012 4.948-.07 4.354-.202 6.782-2.616 6.979-6.98.059-1.28.073-1.703.073-4.948 0-3.244-.011-3.668-.072-4.948-.196-4.373-2.618-6.801-6.979-6.999-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1112.324 0 6.162 6.162 0 01-12.324 0zM12 16a4 4 0 110-8 4 4 0 010 8zm4.965-10.322a1.44 1.44 0 110-2.881 1.44 1.44 0 010 2.881z"/></svg>
-        </a>
-        <a href="https://wa.me/27793241570" target="_blank" class="footer-social-link" title="WhatsApp" aria-label="WhatsApp">
-          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+
+      <!-- Services -->
+      <div class="ft-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#services">Website Development</a></li>
+          <li><a href="#services">SEO Optimisation</a></li>
+          <li><a href="#services">Digital Marketing</a></li>
+          <li><a href="#contact">Free Website Audit</a></li>
+        </ul>
+      </div>
+
+      <!-- Company -->
+      <div class="ft-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#process">How It Works</a></li>
+          <li><a href="#testimonials">Client Results</a></li>
+          <li><a href="#contact">Work With Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Get in touch -->
+      <div class="ft-col">
+        <h5>Get in touch</h5>
+        <div class="ft-contact-rows">
+          <p class="ft-crow"><a href="mailto:info@corlate.co.za">info@corlate.co.za</a></p>
+        </div>
+        <a href="https://wa.me/27793241570?text=Hi%20Corlate%20Technologies%2C%20I%20want%20a%20free%20audit"
+           target="_blank" rel="noopener" class="ft-wa">
+          <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Chat on WhatsApp
         </a>
       </div>
+
     </div>
 
-    <div class="footer-col">
-      <h5>Services</h5>
-      <a href="#services">Website Development</a>
-      <a href="#services">SEO Optimisation</a>
-      <a href="#services">Digital Marketing</a>
-      <a href="#services">Free Website Audit</a>
-    </div>
-
-    <div class="footer-col">
-      <h5>Company</h5>
-      <a href="#about">About Us</a>
-      <a href="#process">How It Works</a>
-      <a href="#testimonials">Testimonials</a>
-      <a href="#contact">Contact</a>
-    </div>
-
-    <div class="footer-col">
-      <h5>Get in Touch</h5>
-      <a href="mailto:info@corlate.co.za">info@corlate.co.za</a>
-      <a href="https://wa.me/27793241570" target="_blank">+27 79 324 1570</a>
-      <p class="footer-location">📍 South Africa</p>
-      <p class="footer-location" style="margin-top:8px;">Remote-First · Serving SA & Beyond</p>
-    </div>
-  </div>
-
-  <div class="footer-bottom">
-    <div class="footer-copy">© <script>document.write(new Date().getFullYear());</script> Corlate Technologies. All rights reserved.</div>
-    <div class="footer-legal">
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms of Service</a>
+    <div class="ft-bottom">
+      <p class="ft-copy">&copy; <span id="yr"></span> Corlate Technologies. All rights reserved.</p>
+      <nav class="ft-legal" aria-label="Legal">
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/terms-of-service">Terms of Service</a>
+      </nav>
     </div>
   </div>
 </footer>
 
 <!-- WhatsApp FAB -->
 <a href="https://wa.me/27793241570?text=Hi%20Corlate%20Technologies%2C%20I%20want%20a%20free%20audit"
-   target="_blank" class="wa-fab" title="Chat on WhatsApp">
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+   class="wa-fab" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg width="24" height="24" fill="white" viewBox="0 0 24 24">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
 </a>
-
 <script src="js/script.js"></script>
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  const msg = document.getElementById('message');
+  const counter = document.getElementById('char-count');
+  if (msg && counter) {
+    msg.addEventListener('input', () => { counter.textContent = msg.value.length; });
+  }
+
+  const form = document.getElementById('contactForm');
+  if (form) {
+    function validate(id, fn) {
+      const fg = document.getElementById('fg-' + id);
+      const el = document.getElementById(id);
+      if (!fg || !el) return true;
+      const ok = fn(el.value.trim());
+      el.classList.toggle('has-error', !ok);
+      fg.classList.toggle('show-error', !ok);
+      return ok;
+    }
+    function isEmail(v) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); }
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      const ok = [
+        validate('fname',   v => v.length > 0),
+        validate('lname',   v => v.length > 0),
+        validate('email',   v => isEmail(v)),
+        validate('service', v => v.length > 0),
+      ].every(Boolean);
+      if (!ok) return;
+      const btn = document.getElementById('submitBtn');
+      btn.disabled = true;
+      btn.textContent = 'Sending\u2026';
+      setTimeout(() => {
+        document.getElementById('form-body').style.display = 'none';
+        document.getElementById('form-success').classList.add('show');
+      }, 800);
+    });
+
+    document.getElementById('fname').addEventListener('blur', () => validate('fname', v => v.length > 0));
+    document.getElementById('lname').addEventListener('blur', () => validate('lname', v => v.length > 0));
+    document.getElementById('email').addEventListener('blur', () => validate('email', isEmail));
+    document.getElementById('service').addEventListener('change', () => validate('service', v => v.length > 0));
+  }
+</script>
 </body>
 </html>
