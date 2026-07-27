@@ -25,7 +25,7 @@ function renderNavbar() {
   mount.innerHTML = `
     <nav id="navbar">
       <a class="nav-logo" href="${rootPath}index.html">
-        <img src="${rootPath}assets/images/logo2.png" alt="Corlate Logo" onerror="this.style.display='none'">
+        <img src="${rootPath}assets/images/portfolio/1corlate-logo.png" alt="Corlate Logo" onerror="this.style.display='none'">
       </a>
       <ul class="nav-links">
         <li><a href="${homeTarget()}"${navLink('index.html')}>Home</a></li>
