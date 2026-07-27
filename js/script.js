@@ -16,7 +16,9 @@ if (videoEl) {
 // Nav scroll
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
-  navbar.classList.toggle('scrolled', window.scrollY > 40);
+  if (navbar) {
+    navbar.classList.toggle('scrolled', window.scrollY > 40);
+  }
 });
 
 // Reveal on scroll
@@ -38,12 +40,44 @@ function handleSubmit(btn) {
 }
 
 // Mobile menu
-function toggleMenu() {
+function toggleMenu(force) {
   const hamburger = document.querySelector('.hamburger');
   const mobileMenu = document.getElementById('mobileMenu');
-  hamburger.classList.toggle('active');
-  mobileMenu.classList.toggle('active');
+  if (!hamburger || !mobileMenu) return;
+
+  const shouldOpen = typeof force === 'boolean' ? force : !mobileMenu.classList.contains('active');
+  hamburger.classList.toggle('active', shouldOpen);
+  mobileMenu.classList.toggle('active', shouldOpen);
+  hamburger.setAttribute('aria-expanded', String(shouldOpen));
+  mobileMenu.setAttribute('aria-hidden', String(!shouldOpen));
 }
+
+document.addEventListener('click', (event) => {
+  const hamburger = document.querySelector('.hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  if (!hamburger || !mobileMenu) return;
+
+  const clickedInside = hamburger.contains(event.target) || mobileMenu.contains(event.target);
+  if (!clickedInside && mobileMenu.classList.contains('active')) {
+    toggleMenu(false);
+  }
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    toggleMenu(false);
+  }
+});
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 768) {
+    toggleMenu(false);
+  }
+});
+
+document.querySelectorAll('.mobile-links a').forEach((link) => {
+  link.addEventListener('click', () => toggleMenu(false));
+});
 
 // Team video play
 function playTeamVideo() {
@@ -87,6 +121,7 @@ makeDraggable('aboutTrack');
 // Scroll by card width
 function nudge(trackId, dir) {
   const el = document.getElementById(trackId);
+  if (!el) return;
   const cardWidth = el.querySelector('div').offsetWidth + 24;
   el.scrollBy({ left: dir * cardWidth, behavior: 'smooth' });
 }
@@ -94,6 +129,7 @@ function nudge(trackId, dir) {
 // Dot navigation
 function scrollToCard(trackId, dotsId, index) {
   const el = document.getElementById(trackId);
+  if (!el) return;
   const cardWidth = el.querySelector('div').offsetWidth + 24;
   el.scrollTo({ left: index * cardWidth, behavior: 'smooth' });
   document.querySelectorAll(`#${dotsId} .scroll-dot`).forEach((d,i) => {
@@ -104,6 +140,7 @@ function scrollToCard(trackId, dotsId, index) {
 // Sync dots to scroll position
 function syncDots(trackId, dotsId) {
   const el = document.getElementById(trackId);
+  if (!el) return;
   el.addEventListener('scroll', () => {
     const cardWidth = el.querySelector('div').offsetWidth + 24;
     const index = Math.round(el.scrollLeft / cardWidth);
