@@ -24,10 +24,10 @@ footer {
 
 /* ─── BRAND COLUMN ───────────────────────────────── */
 .ft-brand img {
-  height: 100px;
+  height: 64px;
   width: auto;
   object-fit: contain;
-  object-position: left;
+  border-radius: 8px;
   display: block;
   margin-bottom: 18px;
 }

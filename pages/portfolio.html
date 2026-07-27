@@ -17,7 +17,7 @@
 <div id="site-nav"></div>
 
 <!-- ═══════════════════════════════════════
-     HERO
+     HERO (layered composition)
 ═══════════════════════════════════════ -->
 <section class="pf-hero" id="portfolio">
   <div class="pf-hero-orb pf-hero-orb-1"></div>
@@ -32,53 +32,22 @@
       </h1>
       <p class="pf-hero-sub reveal reveal-delay-2">
         From custom websites and secure hosting to enterprise-grade surveillance systems —
-        we build technology that works for South African businesses, every day.
+        we build technology that works for  businesses, every day.
       </p>
       <div class="pf-hero-btns reveal reveal-delay-3">
-        <a href="#pf-work" class="btn-gold">↓ View Our Work</a>
+        <a href="#pf-work" class="btn-gold"> View Our Work</a>
         <a href="contact.html" class="btn-ghost" style="color:#fff; border-color:rgba(255,255,255,0.25);">Get Free Website Audit</a>
+      </div>
+      <div class="hero-service-pills reveal reveal-delay-3" aria-hidden="true">
+        <span class="pill">Web Development</span>
+        <span class="pill">Smart Surveillance</span>
       </div>
     </div>
 
-    <!-- Abstract tech illustration -->
+    <!-- Portfolio hero image -->
     <div class="pf-hero-visual reveal reveal-delay-2">
-      <div class="pf-illustration">
-        <!-- Browser window -->
-        <div class="pf-ill-browser">
-          <div class="pf-ill-browser-bar">
-            <div class="pf-ill-dot"></div>
-            <div class="pf-ill-dot"></div>
-            <div class="pf-ill-dot"></div>
-            <div class="pf-ill-url"></div>
-          </div>
-          <div class="pf-ill-body">
-            <div class="pf-ill-line accent"></div>
-            <div class="pf-ill-line w-90"></div>
-            <div class="pf-ill-line w-80"></div>
-            <div class="pf-ill-line w-60"></div>
-            <div class="pf-ill-img-row">
-              <div class="pf-ill-img-block"></div>
-              <div class="pf-ill-img-block"></div>
-              <div class="pf-ill-img-block"></div>
-            </div>
-            <div class="pf-ill-line w-40"></div>
-          </div>
-        </div>
-        <!-- Server rack -->
-        <div class="pf-ill-server">
-          <div class="pf-ill-rack"></div>
-          <div class="pf-ill-rack"></div>
-          <div class="pf-ill-rack"></div>
-          <div class="pf-ill-rack"></div>
-        </div>
-        <!-- Shield -->
-        <div class="pf-ill-shield">
-          <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" color="#12a3b0">
-            <path d="M12 2l8 3v6c0 5-3.5 9.3-8 11-4.5-1.7-8-6-8-11V5l8-3z"/>
-            <path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </div>
-      </div>
+      <img class="pf-hero-image" src="../assets/images/portfolio/porfofio-hero-image.png" alt="Website and security solutions portfolio showcase" />
+      <div class="pf-hero-glow" aria-hidden="true"></div>
     </div>
   </div>
 </section>
@@ -100,7 +69,6 @@
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
       </div>
       <h3>Web Development</h3>
-      <span class="pf-sub-count">4 projects</span>
     </div>
 
     <div class="pf-grid">
@@ -209,7 +177,6 @@
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 3v6c0 5-3.5 9.3-8 11-4.5-1.7-8-6-8-11V5l8-3z"/><path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <h3>Surveillance Systems</h3>
-      <span class="pf-sub-count">4 installations</span>
     </div>
 
     <div class="pf-grid">
@@ -311,58 +278,6 @@
 </section>
 
 <!-- ═══════════════════════════════════════
-     SERVICE CATEGORIES
-═══════════════════════════════════════ -->
-<section id="pf-services">
-  <div class="pf-section-inner">
-    <div class="pf-section-header">
-      <div class="section-label reveal">What We Do</div>
-      <h2 class="section-title reveal reveal-delay-1">Our Services</h2>
-      <p class="section-sub reveal reveal-delay-2" style="max-width:520px;">Every solution we offer is designed to help your business grow, stay secure, and operate without friction.</p>
-    </div>
-    <div class="pf-svc-grid">
-
-      <!-- Web Development -->
-      <div class="pf-svc-card reveal">
-        <div class="pf-svc-icon">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-        </div>
-        <h3 class="pf-svc-title">Web Development</h3>
-        <p class="pf-svc-desc">Custom websites built for performance, SEO, and conversion — tailored to your brand and your customers.</p>
-      </div>
-
-      <!-- Hosting & Maintenance -->
-      <div class="pf-svc-card reveal reveal-delay-1">
-        <div class="pf-svc-icon">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="4" rx="1"/><rect x="2" y="10" width="20" height="4" rx="1"/><rect x="2" y="17" width="20" height="4" rx="1"/><circle cx="6" cy="5" r="0.8" fill="currentColor" stroke="none"/><circle cx="6" cy="12" r="0.8" fill="currentColor" stroke="none"/><circle cx="6" cy="19" r="0.8" fill="currentColor" stroke="none"/></svg>
-        </div>
-        <h3 class="pf-svc-title">Hosting &amp; Maintenance</h3>
-        <p class="pf-svc-desc">Reliable hosting with 99.9% uptime, regular backups, security patches, and hands-on support when you need it.</p>
-      </div>
-
-      <!-- Surveillance Systems -->
-      <div class="pf-svc-card reveal reveal-delay-2">
-        <div class="pf-svc-icon">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l8 3v6c0 5-3.5 9.3-8 11-4.5-1.7-8-6-8-11V5l8-3z"/><path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
-        <h3 class="pf-svc-title">Surveillance Systems</h3>
-        <p class="pf-svc-desc">Professional CCTV installation for homes, businesses, and estates — with remote monitoring and 24/7 recording.</p>
-      </div>
-
-      <!-- Free Website Audits -->
-      <div class="pf-svc-card reveal reveal-delay-3">
-        <div class="pf-svc-icon">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-        </div>
-        <h3 class="pf-svc-title">Free Website Audits</h3>
-        <p class="pf-svc-desc">A no-cost, no-obligation deep dive into your current website — uncovering speed issues, SEO gaps, and quick wins.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════
      PROCESS TIMELINE
 ═══════════════════════════════════════ -->
 <section id="pf-process">
@@ -430,80 +345,26 @@
 <!-- ═══════════════════════════════════════
      STATS
 ═══════════════════════════════════════ -->
-<section id="pf-stats">
-  <div class="pf-section-inner">
-    <div class="pf-stats-grid">
-
-      <div class="pf-stat-card reveal">
-        <span class="pf-stat-num" data-target="8" data-suffix="+">8+</span>
-        <p class="pf-stat-label">Projects Delivered</p>
-      </div>
-
-      <div class="pf-stat-card reveal reveal-delay-1">
-        <span class="pf-stat-num" data-target="98" data-suffix="%">98%</span>
-        <p class="pf-stat-label">Client Satisfaction</p>
-      </div>
-
-      <div class="pf-stat-card reveal reveal-delay-2">
-        <span class="pf-stat-num" data-target="99" data-suffix=".9%">99.9%</span>
-        <p class="pf-stat-label">Hosting Uptime</p>
-      </div>
-
-      <div class="pf-stat-card reveal reveal-delay-3">
-        <span class="pf-stat-num" data-target="24" data-suffix="/7">24/7</span>
-        <p class="pf-stat-label">Support Available</p>
-      </div>
-
+<div id="pf-stats">
+  <div class="pf-stats-inner">
+    <div class="pf-stat-item reveal">
+      <div class="pf-stat-num" data-target="8" data-suffix="+">8+</div>
+      <div class="pf-stat-desc">Projects Delivered</div>
+    </div>
+    <div class="pf-stat-item reveal reveal-delay-1">
+      <div class="pf-stat-num" data-target="98" data-suffix="%">98%</div>
+      <div class="pf-stat-desc">Client Satisfaction</div>
+    </div>
+    <div class="pf-stat-item reveal reveal-delay-2">
+      <div class="pf-stat-num" data-target="99" data-suffix=".9%">99.9%</div>
+      <div class="pf-stat-desc">Hosting Uptime</div>
+    </div>
+    <div class="pf-stat-item reveal reveal-delay-3">
+      <div class="pf-stat-num">24/7</div>
+      <div class="pf-stat-desc">Support Available</div>
     </div>
   </div>
-</section>
-
-<!-- ═══════════════════════════════════════
-     TESTIMONIALS
-═══════════════════════════════════════ -->
-<section id="pf-testimonials">
-  <div class="pf-section-inner">
-    <div class="pf-section-header">
-      <div class="section-label reveal">Client Voices</div>
-      <h2 class="section-title reveal reveal-delay-1">What Our Clients Say</h2>
-    </div>
-    <div class="test-grid">
-      <div class="test-card reveal">
-        <div class="stars">★★★★★</div>
-        <p class="test-quote">"The website Corlate built for us completely changed how clients engage with our business. We saw a clear improvement in enquiries and overall user experience within weeks. The team was fast, professional, and genuinely invested in our growth."</p>
-        <div class="test-author">
-          <div class="test-avatar">F.A.</div>
-          <div>
-            <div class="test-name">Fungai Albert</div>
-            <div class="test-role">CEO, Ubuntu Supply</div>
-          </div>
-        </div>
-      </div>
-      <div class="test-card reveal reveal-delay-1">
-        <div class="stars">★★★★★</div>
-        <p class="test-quote">"Corlate helped us improve our website's SEO performance and visibility. We've seen a steady increase in organic traffic and better placement for key search terms. Their approach was structured, professional, and easy to work with."</p>
-        <div class="test-author">
-          <div class="test-avatar">K.N.</div>
-          <div>
-            <div class="test-name">Keitumetse N.</div>
-            <div class="test-role">Nexus Point · Johannesburg</div>
-          </div>
-        </div>
-      </div>
-      <div class="test-card reveal reveal-delay-2">
-        <div class="stars">★★★★★</div>
-        <p class="test-quote">"The free audit alone was worth more than what some agencies charge. They found 12 critical issues we didn't even know about. Then fixed all of them."</p>
-        <div class="test-author">
-          <div class="test-avatar">SB</div>
-          <div>
-            <div class="test-name">Siyanda B.</div>
-            <div class="test-role">Director, Retail Brand · Cape Town</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+</div>
 
 <!-- ═══════════════════════════════════════
      AUDIT BANNER
@@ -535,7 +396,7 @@
 <!-- ═══════════════════════════════════════
      FINAL CTA (reuses existing styles)
 ═══════════════════════════════════════ -->
-<section id="cta">
+<section id="cta" style="background: var(--bg);">
   <div class="cta-ring"></div>
   <div class="cta-ring-2"></div>
   <div class="section-label reveal" style="color:var(--gold);">Ready to Start?</div>
@@ -555,46 +416,29 @@
 <script src="../js/navbar.js"></script>
 <script src="../js/footer.js"></script>
 <script src="../js/script.js"></script>
-
-<!-- Stat counter animation -->
+<script src="../js/hero-portfolio.js"></script>
 <script>
   (function () {
-    const counters = document.querySelectorAll('.pf-stat-num[data-target]');
+    const counters = document.querySelectorAll('#pf-stats .pf-stat-num[data-target]');
     if (!counters.length) return;
-
-    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
     const animate = (el) => {
       const target = parseInt(el.dataset.target, 10);
       const suffix = el.dataset.suffix || '';
-
-      if (prefersReducedMotion) {
-        el.textContent = target + suffix;
-        return;
-      }
-
       const duration = 1800;
       const start = performance.now();
-
       const step = (now) => {
         const progress = Math.min((now - start) / duration, 1);
         const ease = 1 - Math.pow(1 - progress, 3);
         el.textContent = Math.floor(ease * target) + suffix;
         if (progress < 1) requestAnimationFrame(step);
       };
-
       requestAnimationFrame(step);
     };
-
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          animate(entry.target);
-          observer.unobserve(entry.target);
-        }
+        if (entry.isIntersecting) { animate(entry.target); observer.unobserve(entry.target); }
       });
     }, { threshold: 0.5 });
-
     counters.forEach((c) => observer.observe(c));
   })();
 </script>

@@ -28,7 +28,7 @@ function renderFooter() {
       <div class="ft-inner">
         <div class="ft-top">
           <div class="ft-brand">
-            <img src="${_ft_rootPath}assets/images/logo2.png" alt="Corlate Technologies" onerror="this.style.display='none'">
+            <img src="${_ft_rootPath}assets/images/portfolio/1corlate-logo.png" alt="Corlate Technologies" onerror="this.style.display='none'">
             <p class="ft-tagline">Modern websites, SEO, and digital marketing for South African businesses ready to grow online.</p>
             <div class="ft-socials">
               <a href="https://www.linkedin.com/company/corlate-technologies/" target="_blank" rel="noopener" class="ft-social" aria-label="LinkedIn">
@@ -81,8 +81,8 @@ function renderFooter() {
         <div class="ft-bottom">
           <p class="ft-copy">&copy; ${new Date().getFullYear()} Corlate Technologies. All rights reserved.</p>
           <div class="ft-legal">
-            <a href="${_ft_rootPath}privacy-policy">Privacy Policy</a>
-            <a href="${_ft_rootPath}terms-of-service">Terms of Service</a>
+            <a href="/privacy-policy">Privacy Policy</a>
+            <a href="/terms-of-service">Terms of Service</a>
           </div>
         </div>
       </div>
