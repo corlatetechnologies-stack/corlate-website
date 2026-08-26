@@ -629,9 +629,7 @@
 /* ── PROCESS TIMELINE ──────────────────────────────────────── */
 #pf-process {
   padding: var(--pf-section-pad);
-  background:
-    radial-gradient(circle at top left, rgba(13,110,120,0.16), transparent 34%),
-    linear-gradient(180deg, var(--teal) 0%, #0b5a63 100%);
+  background: var(--teal-dark);
   border-top: 1px solid rgba(13,110,120,0.14);
   border-bottom: 1px solid rgba(13,110,120,0.14);
 }

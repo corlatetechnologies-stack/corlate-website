@@ -29,9 +29,9 @@ function renderNavbar() {
       </a>
       <ul class="nav-links">
         <li><a href="${homeTarget()}"${navLink('index.html')}>Home</a></li>
-        <li><a href="${navTarget('services.html', 'services')}"${navLink('services.html')}>Services</a></li>
+        <li><a href="${pagePath('services.html')}?v=2"${navLink('services.html')}>Services</a></li>
         <li><a href="${pagePath('portfolio.html')}"${navLink('portfolio.html')}>Portfolio</a></li>
-        <li><a href="${navTarget('about.html', 'about')}"${navLink('about.html')}>About</a></li>
+        <li><a href="${pagePath('about.html')}"${navLink('about.html')}>About</a></li>
         <li><a href="${navTarget('process.html', 'process')}"${navLink('process.html')}>Process</a></li>
         <li><a href="${navTarget('testimonials.html', 'testimonials')}"${navLink('testimonials.html')}>Testimonials</a></li>
         <li><a href="${navTarget('contact.html', 'contact')}"${navLink('contact.html')}>Contact</a></li>
@@ -43,9 +43,9 @@ function renderNavbar() {
       <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
         <ul class="mobile-links">
           <li><a href="${homeTarget()}" onclick="toggleMenu()">Home</a></li>
-          <li><a href="${navTarget('services.html', 'services')}" onclick="toggleMenu()">Services</a></li>
+          <li><a href="${pagePath('services.html')}?v=2" onclick="toggleMenu()">Services</a></li>
           <li><a href="${pagePath('portfolio.html')}" onclick="toggleMenu()">Portfolio</a></li>
-          <li><a href="${navTarget('about.html', 'about')}" onclick="toggleMenu()">About</a></li>
+          <li><a href="${pagePath('about.html')}" onclick="toggleMenu()">About</a></li>
           <li><a href="${navTarget('process.html', 'process')}" onclick="toggleMenu()">Process</a></li>
           <li><a href="${navTarget('testimonials.html', 'testimonials')}" onclick="toggleMenu()">Testimonials</a></li>
           <li><a href="${navTarget('contact.html', 'contact')}" onclick="toggleMenu()">Contact</a></li>

@@ -150,4 +150,36 @@ function syncDots(trackId, dotsId) {
   });
 }
 syncDots('servicesTrack', 'servicesDots');
+
+// Services page FAQ accordion
+const faqTriggers = document.querySelectorAll('.svc-faq-trigger');
+if (faqTriggers.length) {
+  const closeAllFaqs = () => {
+    faqTriggers.forEach((trigger) => {
+      const item = trigger.closest('.svc-faq-item');
+      const panel = document.getElementById(trigger.getAttribute('aria-controls'));
+      if (!item || !panel) return;
+      item.classList.remove('open');
+      trigger.setAttribute('aria-expanded', 'false');
+      panel.setAttribute('aria-hidden', 'true');
+    });
+  };
+
+  faqTriggers.forEach((trigger) => {
+    const panelId = trigger.getAttribute('aria-controls');
+    const panel = document.getElementById(panelId);
+    if (!panel) return;
+
+    trigger.addEventListener('click', () => {
+      const item = trigger.closest('.svc-faq-item');
+      const isOpen = item.classList.contains('open');
+      closeAllFaqs();
+      if (!isOpen) {
+        item.classList.add('open');
+        trigger.setAttribute('aria-expanded', 'true');
+        panel.setAttribute('aria-hidden', 'false');
+      }
+    });
+  });
+}
 syncDots('aboutTrack', 'aboutDots');
