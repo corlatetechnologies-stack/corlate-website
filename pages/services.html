@@ -9,145 +9,263 @@
 <link rel="stylesheet" href="../css/styles.css">
 <link rel="stylesheet" href="../css/footer.css">
 <link rel="stylesheet" href="../css/layout.css">
+<link rel="stylesheet" href="../css/services.css?v=3">
 </head>
-<body>
+<body class="services-page">
 
 <div id="site-nav"></div>
 
-<!-- SERVICES -->
-<section id="services" style="padding-top: 120px;">
-  <div class="services-header">
-    <div class="section-label reveal">What We Do</div>
-    <h2 class="section-title reveal reveal-delay-1">End-to-End Digital<br>Growth Solutions</h2>
-    <p class="section-sub reveal reveal-delay-2">From idea to execution — we handle the strategy, the build, and the growth. Hover each card to learn more.</p>
+<main class="svc-page-content">
+  <section class="svc-hero" aria-labelledby="services-hero-title">
+    <div class="svc-eyebrow">Build. Secure. Grow.</div>
+    <h1 id="services-hero-title">Technology designed around your business.</h1>
+    <p>From digital experiences and business infrastructure to security and ongoing support, Corlate delivers technology solutions that help your business operate smarter and grow with confidence.</p>
+    <div class="svc-hero-actions">
+      <a href="/pages/contact.html" class="svc-btn-primary">Get a Free Consultation <span aria-hidden="true"></span></a>
+      <a href="#services" class="svc-btn-secondary">Explore Our Services <span aria-hidden="true"></span></a>
+    </div>
+  </section>
+
+  <div id="services" class="svc-services-intro">
+    <div class="svc-section-rule"></div>
+    <div class="svc-eyebrow">Our services</div>
+    <h2>Professional IT & Digital Solutions</h2>
+    <p>From custom web development and business hosting to surveillance systems and ongoing IT support, we provide reliable technology solutions tailored to your business needs. Explore our services and discover how Corlate can help you work smarter, grow faster, and stay connected.</p>
   </div>
 
-  <div class="services-track-wrap reveal reveal-delay-3">
-    <div class="services-track" id="servicesTrack">
-
-      <!-- Card 1: Web & System Development -->
-      <div class="service-flip-wrap" onclick="toggleFlip(this)">
-        <div class="service-card">
-          <!-- FRONT -->
-          <div class="card-front">
-            <div class="card-front-visual sv-1">
-              <div class="flip-hint">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 1l4 4-4 4"/><path d="M3 11V9a4 4 0 014-4h14"/><path d="M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 01-4 4H3"/></svg>
-                Hover to flip
-              </div>
-              <span class="card-front-icon">&#128187;</span>
-            </div>
-            <div class="card-front-body">
-              <h3>Web &amp; System Development</h3>
-              <p>Custom websites, e-commerce, web apps, and business management systems — built from scratch.</p>
-            </div>
-          </div>
-          <!-- BACK -->
-          <div class="card-back cb-1">
-            <span class="card-back-icon">&#128187;</span>
-            <h4>Web &amp; System Development</h4>
-            <p>Business Websites &middot; E-commerce &middot; Custom Web Applications &middot; Business Management Systems &middot; Customer Portals &middot; API Integration &middot; Website Redesign &amp; Optimisation &middot; Mobile-Responsive Development</p>
-            <a href="contact.html" class="back-cta">&rarr; Get a Quote</a>
-          </div>
-        </div>
+  <section class="svc-service-section">
+    <div class="svc-service-card svc-from-left" data-svc-animate>
+      <div class="svc-card-visual"><img class="svc-art svc-service-image" src="../assets/images/web-system-development.png" alt="Modern website and digital solution interface"><div class="svc-veil"></div></div>
+      <div class="svc-card-content">
+        <div class="svc-tag">DIGITAL PRESENCE</div>
+        <h2>Web Development</h2>
+        <p>Professional websites designed to give your business a strong digital presence and help turn visitors into customers.</p>
+        <ul class="svc-feature-list">
+          <li>Business websites</li><li>E-commerce websites</li><li>Responsive &amp; mobile-friendly design</li><li>Website maintenance</li><li>Website redesigns</li>
+        </ul>
+        <a href="/pages/contact.html" class="svc-learn-more">Build My Website <span>→</span></a>
       </div>
-
-      <!-- Card 2: Domain, Email Hosting & Maintenance -->
-      <div class="service-flip-wrap" onclick="toggleFlip(this)">
-        <div class="service-card">
-          <div class="card-front">
-            <div class="card-front-visual sv-2">
-              <div class="flip-hint">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 1l4 4-4 4"/><path d="M3 11V9a4 4 0 014-4h14"/><path d="M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 01-4 4H3"/></svg>
-                Hover to flip
-              </div>
-              <span class="card-front-icon">&#127760;</span>
-            </div>
-            <div class="card-front-body">
-              <h3>Hosting &amp; Maintenance</h3>
-              <p>Reliable domain, email hosting, and ongoing support to keep your business running smoothly.</p>
-            </div>
-          </div>
-          <div class="card-back cb-2">
-            <span class="card-back-icon">&#127760;</span>
-            <h4>Domain, Email Hosting &amp; Maintenance</h4>
-            <p>Domain Registration &amp; Management &middot; Professional Business Email &middot; Website Hosting &middot; Maintenance &amp; Updates &middot; Security Monitoring &middot; Backup &amp; Recovery &middot; Technical Support</p>
-            <a href="contact.html" class="back-cta">&rarr; Get Started</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 3: Surveillance Systems -->
-      <div class="service-flip-wrap" onclick="toggleFlip(this)">
-        <div class="service-card">
-          <div class="card-front">
-            <div class="card-front-visual sv-3">
-              <div class="flip-hint">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 1l4 4-4 4"/><path d="M3 11V9a4 4 0 014-4h14"/><path d="M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 01-4 4H3"/></svg>
-                Hover to flip
-              </div>
-              <span class="card-front-icon">&#128247;</span>
-            </div>
-            <div class="card-front-body">
-              <h3>Surveillance Systems</h3>
-              <p>CCTV, IP cameras, and remote monitoring solutions to protect your business assets.</p>
-            </div>
-          </div>
-          <div class="card-back cb-3">
-            <span class="card-back-icon">&#128247;</span>
-            <h4>Surveillance Systems</h4>
-            <p>CCTV Installation &middot; IP Surveillance Systems &middot; Remote Monitoring &middot; NVR &amp; DVR Setup &middot; System Configuration &middot; Maintenance &amp; Support &middot; Security Consultation</p>
-            <a href="contact.html" class="back-cta">&rarr; Secure Your Business</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 4: Free Audit -->
-      <div class="service-flip-wrap" onclick="toggleFlip(this)">
-        <div class="service-card">
-          <div class="card-front">
-            <div class="card-front-visual sv-4">
-              <div class="flip-hint">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 1l4 4-4 4"/><path d="M3 11V9a4 4 0 014-4h14"/><path d="M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 01-4 4H3"/></svg>
-                Hover to flip
-              </div>
-              <span class="card-front-icon">📋</span>
-            </div>
-            <div class="card-front-body">
-              <h3>Free Website Audit</h3>
-              <p>Find the gaps holding your business back — at zero cost to you.</p>
-            </div>
-          </div>
-          <div class="card-back cb-4">
-            <span class="card-back-icon">📋</span>
-            <h4>Free Website Audit</h4>
-            <p>We'll audit your current site — speed, SEO, UX, and conversion gaps — then deliver a full, actionable report at absolutely zero cost. No strings attached.</p>
-            <a href="contact.html" class="back-cta">→ Claim Your Audit</a>
-          </div>
-        </div>
-      </div>
-
     </div>
-  </div>
+  </section>
 
-  <div style="display:flex; justify-content:space-between; align-items:center; margin-top:32px;">
-    <div class="scroll-nav" id="servicesDots">
-      <div class="scroll-dot active" onclick="scrollToCard('servicesTrack','servicesDots',0)"></div>
-      <div class="scroll-dot" onclick="scrollToCard('servicesTrack','servicesDots',1)"></div>
-      <div class="scroll-dot" onclick="scrollToCard('servicesTrack','servicesDots',2)"></div>
-      <div class="scroll-dot" onclick="scrollToCard('servicesTrack','servicesDots',3)"></div>
+  <section class="svc-service-section">
+    <div class="svc-service-card svc-from-right" data-svc-animate>
+      <div class="svc-card-visual"><img class="svc-art svc-service-image" src="../assets/images/portfolio/domai-email-hosting.jpg" alt="Secure hosting, email and domain infrastructure"><div class="svc-veil"></div></div>
+      <div class="svc-card-content">
+        <div class="svc-tag">SECURITY</div>
+        <h2>Surveillance &amp; Security Systems</h2>
+        <p>Reliable security solutions designed to help you monitor, protect and manage your property with confidence.</p>
+        <ul class="svc-feature-list">
+          <li>CCTV installation</li><li>Remote monitoring</li><li>Security cameras</li><li>Business &amp; home surveillance</li><li>System maintenance</li>
+        </ul>
+        <a href="/pages/contact.html" class="svc-learn-more">Secure My Property <span>→</span></a>
+      </div>
     </div>
-    <div class="scroll-arrows">
-      <div class="scroll-arrow" onclick="nudge('servicesTrack',-1)">←</div>
-      <div class="scroll-arrow" onclick="nudge('servicesTrack',1)">→</div>
+  </section>
+
+  <section class="svc-service-section">
+    <div class="svc-service-card svc-from-left" data-svc-animate>
+      <div class="svc-card-visual"><img class="svc-art svc-service-image" src="../assets/images/portfolio/survallance-systems.png" alt="Professional surveillance monitoring system"><div class="svc-veil"></div></div>
+      <div class="svc-card-content">
+        <div class="svc-tag">CONNECTIVITY</div>
+        <h2>Domain &amp; Email Hosting</h2>
+        <p>Keep your business connected with professional domains, business email and reliable website hosting. <span>yourname@yourbusiness.co.za</span></p>
+        <ul class="svc-feature-list">
+          <li>Domain registration</li><li>Professional business email</li><li>Email setup</li><li>Website hosting</li><li>DNS management</li>
+        </ul>
+        <a href="/pages/contact.html" class="svc-learn-more">Get Connected <span>→</span></a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <section class="svc-audit-offer" aria-labelledby="svc-audit-title">
+    <div class="svc-audit-content">
+      <div class="svc-audit-eyebrow">FREE WEBSITE AUDIT</div>
+      <h2 id="svc-audit-title">Not sure why your website isn't getting results?</h2>
+      <p>We'll review your website and identify opportunities to improve its performance, design, SEO and user experience — completely free.</p>
+    </div>
+    <a href="/pages/contact.html" class="svc-btn-primary">Get My Free Audit <span aria-hidden="true">→</span></a>
+  </section>
+
+  <section id="pf-process">
+    <div class="pf-section-inner">
+      <div class="pf-section-header" style="text-align:center;">
+        <div class="section-label reveal" style="justify-content:center;">How We Work</div>
+        <h2 class="section-title reveal reveal-delay-1" style="text-align:center;">Our Process</h2>
+        <p class="section-sub reveal reveal-delay-2" style="max-width:520px; margin:0 auto;">Simple, transparent, and built around keeping you informed at every stage.</p>
+      </div>
+      <div class="pf-steps">
+
+        <div class="pf-step reveal">
+          <div class="pf-step-num">1</div>
+          <div class="pf-connector"></div>
+          <div class="pf-step-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+          </div>
+          <div class="pf-step-title">Consultation</div>
+          <p class="pf-step-desc">We listen to your goals, challenges, and requirements.</p>
+        </div>
+
+        <div class="pf-step reveal reveal-delay-1">
+          <div class="pf-step-num">2</div>
+          <div class="pf-connector"></div>
+          <div class="pf-step-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+          </div>
+          <div class="pf-step-title">Planning</div>
+          <p class="pf-step-desc">We design a clear scope, timeline, and deliverables.</p>
+        </div>
+
+        <div class="pf-step reveal reveal-delay-2">
+          <div class="pf-step-num">3</div>
+          <div class="pf-connector"></div>
+          <div class="pf-step-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <div class="pf-step-title">Build / Install</div>
+          <p class="pf-step-desc">Development or installation executed to spec with quality checks.</p>
+        </div>
+
+        <div class="pf-step reveal reveal-delay-3">
+          <div class="pf-step-num">4</div>
+          <div class="pf-connector"></div>
+          <div class="pf-step-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <div class="pf-step-title">Deployment</div>
+          <p class="pf-step-desc">We go live and ensure everything runs perfectly from day one.</p>
+        </div>
+
+        <div class="pf-step reveal reveal-delay-4">
+          <div class="pf-step-num">5</div>
+          <div class="pf-step-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+          </div>
+          <div class="pf-step-title">Ongoing Support</div>
+          <p class="pf-step-desc">We stay available for updates, questions, and growth.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="svc-faq reveal" aria-labelledby="svc-faq-title">
+    <div class="svc-faq-inner">
+      <div class="svc-faq-header reveal reveal-delay-1">
+        <div class="svc-eyebrow">Frequently asked</div>
+        <h2 id="svc-faq-title" class="svc-section-heading">Frequently Asked Questions</h2>
+        <p class="svc-section-sub">Everything you need to know before starting your project with Corlate Technologies.</p>
+      </div>
+
+      <div class="svc-faq-list">
+
+        <div class="svc-faq-item reveal reveal-delay-2">
+          <button class="svc-faq-trigger" aria-expanded="false" aria-controls="faq-content-1" id="faq-trigger-1">
+            <span>How long does it take to complete a website?</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="svc-faq-panel" id="faq-content-1" role="region" aria-labelledby="faq-trigger-1" aria-hidden="true">
+            <p>Most business websites are completed within 2–6 weeks depending on the project scope, required features, and how quickly content and feedback are provided.</p>
+          </div>
+        </div>
+
+        <div class="svc-faq-item reveal reveal-delay-2">
+          <button class="svc-faq-trigger" aria-expanded="false" aria-controls="faq-content-2" id="faq-trigger-2">
+            <span>Do you redesign existing websites?</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="svc-faq-panel" id="faq-content-2" role="region" aria-labelledby="faq-trigger-2" aria-hidden="true">
+            <p>Yes. We modernise outdated websites by improving their design, performance, security, responsiveness, and user experience while maintaining your brand identity.</p>
+          </div>
+        </div>
+
+        <div class="svc-faq-item reveal reveal-delay-2">
+          <button class="svc-faq-trigger" aria-expanded="false" aria-controls="faq-content-3" id="faq-trigger-3">
+            <span>Do you provide website maintenance?</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="svc-faq-panel" id="faq-content-3" role="region" aria-labelledby="faq-trigger-3" aria-hidden="true">
+            <p>Absolutely. We provide ongoing maintenance, software updates, backups, security monitoring, performance optimisation, and technical support to keep your website running smoothly.</p>
+          </div>
+        </div>
+
+        <div class="svc-faq-item reveal reveal-delay-2">
+          <button class="svc-faq-trigger" aria-expanded="false" aria-controls="faq-content-4" id="faq-trigger-4">
+            <span>Can you help with domain registration and business email?</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="svc-faq-panel" id="faq-content-4" role="region" aria-labelledby="faq-trigger-4" aria-hidden="true">
+            <p>Yes. We can register your domain, configure professional business email addresses, set up reliable hosting, and ensure everything works seamlessly.</p>
+          </div>
+        </div>
+
+        <div class="svc-faq-item reveal reveal-delay-2">
+          <button class="svc-faq-trigger" aria-expanded="false" aria-controls="faq-content-5" id="faq-trigger-5">
+            <span>Do you install surveillance systems?</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="svc-faq-panel" id="faq-content-5" role="region" aria-labelledby="faq-trigger-5" aria-hidden="true">
+            <p>Yes. We provide professional CCTV and surveillance system installation for homes and businesses, including planning, installation, configuration, testing, and ongoing support.</p>
+          </div>
+        </div>
+
+        <div class="svc-faq-item reveal reveal-delay-2">
+          <button class="svc-faq-trigger" aria-expanded="false" aria-controls="faq-content-6" id="faq-trigger-6">
+            <span>Can Corlate help my business grow online?</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="svc-faq-panel" id="faq-content-6" role="region" aria-labelledby="faq-trigger-6" aria-hidden="true">
+            <p>Absolutely. Beyond building websites, we help businesses establish a strong online presence through SEO, digital solutions, reliable hosting, and technology that supports long-term growth.</p>
+          </div>
+        </div>
+
+        <div class="svc-faq-item reveal reveal-delay-2">
+          <button class="svc-faq-trigger" aria-expanded="false" aria-controls="faq-content-7" id="faq-trigger-7">
+            <span>How do I get started?</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="svc-faq-panel" id="faq-content-7" role="region" aria-labelledby="faq-trigger-7" aria-hidden="true">
+            <p>Simply contact us for a free consultation. We'll discuss your goals, understand your requirements, recommend the best solution, and provide a tailored quotation before any work begins.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="cta">
+    <div class="cta-ring"></div>
+    <div class="cta-ring-2"></div>
+    <div class="section-label reveal" style="color:var(--gold);">Ready to Start?</div>
+    <h2 class="cta-title reveal reveal-delay-1">Let's Build Something<br><em>Great Together</em></h2>
+    <p class="cta-sub reveal reveal-delay-2">Whether you need a new website, better rankings, or a full digital strategy — it starts with a free, no-obligation audit.</p>
+    <div class="cta-btns reveal reveal-delay-3">
+      <a href="contact.html#contact" class="btn-gold">→ Request Free Audit</a>
+      <a href="https://wa.me/27793241570?text=Hi%20Corlate%20Technologies%2C%20I%20want%20a%20free%20audit" target="_blank" class="btn-ghost" style="color:#fff; border-color:rgba(255,255,255,0.3);">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Chat on WhatsApp
+      </a>
+    </div>
+  </section>
+</main>
 
 <div id="site-footer"></div>
 
-<script src="../js/navbar.js"></script>
-  <script src="../js/footer.js"></script>
+<script src="../js/navbar.js?v=2"></script>
+<script src="../js/footer.js"></script>
 <script src="../js/script.js"></script>
+<script>
+  const svcObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) entry.target.classList.add('svc-in-view');
+    });
+  }, { threshold: 0.2 });
+
+  document.querySelectorAll('[data-svc-animate]').forEach((element) => svcObserver.observe(element));
+
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('[data-svc-animate]').forEach((element) => element.classList.add('svc-in-view'));
+  }
+</script>
 </body>
 </html>
